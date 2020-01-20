@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="eng">
+  <head>
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale-1,
+     shrink-to-fit=no">
+     <link rel="stylesheet" href="
+     https://maxcds.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+      <title>Speed Calculator</title>
+  </head>
+     <body>
+     <div class='container' style='padding-top:25px'>
+         <h1><center>Speed Calculator</center></h1>
+     <hr>
+     <br>
+     <form method='post' action='/'>
+     <div class='form-group row'>
+         <div style='text-align:center' style='padding-top-10px' class='col-sm-6'>
+             <label>Enter Distance (in kms)=</label>
+         </div>
+         <div style='text-align:center' style='padding-top-10px'  class='col-sum-6'>
+             <input type='number' class='form-control' name='distance' value="{{distance}}">
+
+     </div>
+     </div>
+     <div class='form-group row'>
+
+        <div style='text-align:center' style='padding-top-10px' class='col-sm-6'>
+        <label>Enter Time (in hrs)</label>
+        </div>
+         <div style='text-align:center' style='padding-top-10px' class='col-sm-6'>
+             <input type='number' class='form-control' name='time' value="{{time}}">
+
+     </div>
+     </div>
+<div class='form-group row'>
+
+
+       <div style='text-align:center' class='col-sum-12'>
+       <button type='submit' class='btn btn-primary'>Calculate Speed</button>
+       </div>
+
+     </div>
+<div>
+<p style='font-weight:bold; font-size: 30px; color: green'>Speed: {{speed}} km/hr</p>
+</div>
+</form>
+</div>
+     </body>
+</html>
